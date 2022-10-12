@@ -1,2 +1,1 @@
-# enos
-Efficient Non-parametric Optimizer Search
+# Efficient Non-parametric Optimizer Search
