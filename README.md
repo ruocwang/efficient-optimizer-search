@@ -1,1 +1,1 @@
-# Efficient Non-parametric Optimizer Search
+# ENOS - Efficient Non-parametric Optimizer Search
