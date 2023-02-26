@@ -1,6 +1,6 @@
 # Preface
 
-If you are interested in Google's new automatically discovered optimizer [LION](https://arxiv.org/abs/2302.06675) and want an optimizer search algorithm that runs on commercial GPUs, please check out this repo based on our NeurIPS 2022 paper.
+If you are interested in Google's new automatically discovered optimizer [LION](https://arxiv.org/abs/2302.06675) and want to experiement with an optimizer search algorithm that runs on commercial GPUs, please check out this repo based on our NeurIPS 2022 paper.
 
 
 # ENOS - Efficient Non-parametric Optimizer Search
