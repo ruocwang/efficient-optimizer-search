@@ -21,34 +21,48 @@ pip install git+https://github.com/RobustBench/robustbench.git
 ```
 
 
-## MNIST
+## MNIST-NET Task
 ```
 #### search
 bash mc-mnistnet.sh --constraint 1 --seed 0/1
 
 #### eval
 ## direct
-bash eval-mnistnet.sh --optimizer G/SGD/NAG/Adam/RMSProp
+bash eval-mnistnet.sh --optimizer <G/SGD/NAG/Adam/RMSProp>
 
 ## transfer (1000 steps)
 # mnistnet
-bash eval-mnistnet.sh --optimizer G
+bash eval-mnistnet.sh --optimizer <>
 # mnistnet-relu
-bash eval-mnistnet.sh --extra_configs "model=MNISTNetV2_Relu" --optimizer G
+bash eval-mnistnet.sh --extra_configs "model=MNISTNetV2_Relu" --optimizer <>
 # mnistnet-2layers
-bash eval-mnistnet.sh --extra_configs "modelcZ=MNISTNetV2_2Layer" --optimizer G
+bash eval-mnistnet.sh --extra_configs "modelcZ=MNISTNetV2_2Layer" --optimizer <>
 # mnistnet-large
-bash eval-mnistnet.sh --extra_configs "model=MNISTNetV2_Big" --optimizer G
+bash eval-mnistnet.sh --extra_configs "model=MNISTNetV2_Big" --optimizer <>
 ```
-
-## Conv
-
 
 
 ## TODO
-[ ]. Finishing Up Document
-[ ]. Environment setup
-[ ]. Organize searched optimizers
-[ ]. Reproducibility check
-[ ]. Second round of code factorization
-[ ]. MultiProcessor code
+- [ ] Finishing Up Document
+- [ ] Environment setup
+- [ ] Organize searched optimizers
+- [ ] Reproducibility check
+- [ ] Second round of code factorization
+- [ ] MultiProcessor code
+
+
+## Citation
+If you find this project helpful, please consider citing our paper:
+
+Thanks!
+
+```
+@inproceedings{
+  ruochenwang2022ENOS,
+  title={Efficient Non-Parametric Optimizer Search for Diverse Tasks},
+  author={Wang, Ruochen and Xiong, Yuanhao and Cheng, Minhao and Hsieh, Cho-Jui},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2022},
+  url={https://arxiv.org/abs/2209.13575}
+}
+```
