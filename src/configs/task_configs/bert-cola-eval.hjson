@@ -1,0 +1,49 @@
+{
+    // model
+    "criterion": "CrossEntropyLoss",
+    // grid search
+    "hps": {
+        "lr": [2e-5, 0.0001, 0.0006, 0.001, 0.003, 0.006, 0.01, 0.03, 0.06, 1.0],
+    },
+    "hierarchical": false,
+    // algo
+    "momentum": 0.9,
+    "momentum2": 0.999,
+    "momentum3": 0.999,
+
+
+// dm args modifiable
+"num_seeds_gs": 1,
+"num_seeds": 4,
+'num_epochs_gs': 3,
+'num_epochs': 3,
+'dataset': 'cola',
+'weight_decay': 0,
+'lr_scheduler_type': 'linear', // use constant to disable it
+"metric_name": "matthews_correlation",
+
+
+// 'learning_rate': 2e-05,
+// 'num_train_epochs': 3,
+'num_warmup_steps': 0,
+'output_dir': 'trash/',
+'model_name_or_path': 'bert-base-cased',
+
+
+'checkpointing_steps': null,
+'gradient_accumulation_steps': 1,
+'hub_model_id': null,
+'hub_token': null,
+'max_length': 128,
+'max_train_steps': null,
+'pad_to_max_length': false,
+'per_device_eval_batch_size': 8,
+'per_device_train_batch_size': 32,
+'push_to_hub': false,
+'resume_from_checkpoint': null,
+'seed': null,
+'train_file': null,
+'use_slow_tokenizer': false,
+'validation_file': null,
+'with_tracking': false,
+}

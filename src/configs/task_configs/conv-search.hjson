@@ -1,0 +1,25 @@
+{
+    // model
+    "model": "Conv",
+    "criterion": "CrossEntropyLoss",
+    // grid search
+    "hps": {
+        "lr": [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1],
+    },
+    "hierarchical": false,
+    // algo
+    "momentum": 0.9,
+    "momentum2": 0.999,
+    "momentum3": 0.999,
+
+
+// eval
+"batch_size": 100,
+"num_seeds_gs": 1,
+"num_seeds": 4,
+"num_epochs_gs": 1,
+"num_epochs": 5,
+"single_step": false,
+"dataset": "cifar10",
+"metric_name": "final_valid_acc",
+}

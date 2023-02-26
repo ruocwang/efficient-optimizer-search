@@ -1,0 +1,15 @@
+{
+    "batch_size": 128,
+    "num_epochs": 200,
+    "single_step": true,
+    "lr": [1.0, 0.3, 0.1, 0.03, 0.01, 0.003, 0.001],
+    "model": "MNISTNetV2_Big",
+    "dataset": "MNIST",
+    "criterion": "NLLLoss",
+    "metric": "cumm_train_loss",
+    "num_seeds": 100,
+
+    "momentum": 0.9,
+    "momentum2": 0.999,
+    "momentum3": 0.999
+}

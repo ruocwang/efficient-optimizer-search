@@ -1,0 +1,24 @@
+{
+    // model
+    "model": "MNISTNetV2",
+    "criterion": "NLLLoss",
+    // grid search
+    "hps": {
+        "lr": [0.0006, 0.001, 0.003, 0.006, 0.01, 0.03, 0.06, 0.1, 0.3, 1.0],
+    },
+    "hierarchical": false,
+    // algo
+    "momentum": 0.9,
+    "momentum2": 0.999,
+    "momentum3": 0.999,
+
+// eval
+"single_step": true,
+"num_seeds_gs": 1,
+"num_seeds": 10,
+"batch_size": 128,
+"num_epochs_gs": 100,
+"num_epochs": 100,
+"dataset": "MNIST",
+"metric_name": "avg_train_loss",
+}

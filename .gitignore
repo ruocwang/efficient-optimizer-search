@@ -127,3 +127,18 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Customized
+**/__pycache__
+./__pycache__
+data
+results
+pred_dataset
+experiments
+models
+src_mp*
+cache
+datasets
+dataset_pool.pth
+src_unorganized

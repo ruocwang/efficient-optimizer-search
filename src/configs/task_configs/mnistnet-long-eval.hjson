@@ -1,0 +1,18 @@
+{
+    // model
+    "model": "MNISTNetV2",
+    "criterion": "NLLLoss",
+    // grid search
+    "lr": [1.0, 0.3, 0.1, 0.03, 0.01, 0.003],
+    // eval
+    "batch_size": 128,
+    "num_epochs": 10,
+    "single_step": false,
+    "dataset": "MNIST",
+    "metric_name": "cumm_train_loss",
+    "num_seeds": 5,
+    // algo
+    "momentum": 0.9,
+    "momentum2": 0.999,
+    "momentum3": 0.999,
+}

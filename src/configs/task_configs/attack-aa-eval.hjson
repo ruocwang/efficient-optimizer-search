@@ -1,0 +1,28 @@
+// dev, hard code aa
+{
+    // model
+    "model": "Gowal2021Improving_28_10_ddpm_100m",
+    "criterion": "CrossEntropyLossIndiv",
+    // grid search
+    "hps": {
+        "lr": [0.0627],
+        "step": [100],
+    },
+    "num_epochs_gs": 10,
+    // eval
+    "batch_size": 100,
+    "num_epochs": 100,
+    "single_step": true,
+    "dataset": "cifar10",
+    "normalize_data": false,
+    "metric_name": "success_rate",
+    "num_seeds": 1,
+    "task": "Linf_PGD",
+    "eps": 0.03137254901,
+ 
+    // algo
+    "momentum": 0.25,
+    "momentum2": 0.999,
+    "momentum3": 0.999,
+}
+// same as attack-eval

@@ -1,0 +1,7 @@
+{
+    "topn": 999999999999,
+    "sample_prob": "cost", // uniform, e.t.c.
+    // "max_depth": 999999999999,
+    "restart": false,
+    "dup": true, // include duplicate in child_score
+}

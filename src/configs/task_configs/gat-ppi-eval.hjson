@@ -1,0 +1,36 @@
+{
+    // model
+    "model": "CRGNN",
+    "criterion": "CrossEntropyLoss",
+    // grid search
+    "hps": {
+        "lr": [0.0006, 0.001, 0.003, 0.006, 0.01, 0.03, 0.06],
+    },
+    "hierarchical": false,
+    // eval
+    "metric_name": "final_valid_acc",
+    // algo
+    "momentum": 0.9,
+    "momentum2": 0.999,
+    "momentum3": 0.999,
+
+
+// gnn args modifiable
+"num_seeds_gs": 1,
+"num_seeds": 4,
+'num_epochs_gs': 400,
+'num_epochs': 400,
+'dataset': 'ppi',
+'patience': 10,
+'weight_decay': 0,
+
+'alpha': 0.2,
+'attn_drop': 0,
+'batch_size': 2,
+'in_drop': 0,
+'num_heads': 4,
+'num_hidden': 256,
+'num_layers': 3,
+'num_out_heads': 6,
+'residual': true,
+}
